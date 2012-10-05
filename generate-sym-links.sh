@@ -5,6 +5,7 @@
 # with the dot files in this repo.
 # 
 # The current files are
+# .bashrc:      bash configuration file
 # .vimrc:       Vim configuration file
 # .vim/:        Vim addon/plugin directory
 # .gitconfig:   git configuration
@@ -21,7 +22,7 @@ done
 
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
+rm -rf $HOME/.bashrc; ln -s $DIR/.bashrc $HOME/.bashrc
 rm -rf $HOME/.vimrc; ln -s $DIR/.vimrc $HOME/.vimrc
 rm -rf $HOME/.vim; ln -s $DIR/.vim $HOME/.vim
 rm -rf $HOME/.gitconfig; ln -s $DIR/.gitconfig $HOME/.gitconfig
-
