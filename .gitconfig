@@ -1,8 +1,5 @@
 [color]
 	ui = true
-[user]
-  email = jeremywright@goinstant.com
-	name = Jeremy Wright
 [alias]
   s = status
   ci = commit
