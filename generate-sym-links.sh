@@ -5,11 +5,23 @@
 # with the dot files in this repo.
 # 
 # The current files are
-# .bashrc:      Bash configuration file
 # .vimrc:       Vim configuration file
 # .vim/:        Vim addon/plugin directory
 # .gitconfig:   git configuration
 #
 ################################################################################
+SOURCE="${BASH_SOURCE[0]}"
+DIR="$( dirname "$SOURCE" )"
+while [ -h "$SOURCE" ]
+do 
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+  DIR="$( cd -P "$( dirname "$SOURCE"  )" && pwd )"
+done
 
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+rm -rf $HOME/.vimrc; ln -s $DIR/.vimrc $HOME/.vimrc
+rm -rf $HOME/.vim; ln -s $DIR/.vim $HOME/.vim
+rm -rf $HOME/.gitconfig; ln -s $DIR/.gitconfig $HOME/.gitconfig
 
