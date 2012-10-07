@@ -8,7 +8,8 @@
 # .bashrc:      bash configuration file
 # .vimrc:       Vim configuration file
 # .vim/:        Vim addon/plugin directory
-# .gitconfig:   git configuration
+# .gitconfig:   git configuration file
+# .jshintrc:    jshint configuration file
 #
 ################################################################################
 SOURCE="${BASH_SOURCE[0]}"
@@ -26,3 +27,4 @@ rm -rf $HOME/.bashrc; ln -s $DIR/.bashrc $HOME/.bashrc
 rm -rf $HOME/.vimrc; ln -s $DIR/.vimrc $HOME/.vimrc
 rm -rf $HOME/.vim; ln -s $DIR/.vim $HOME/.vim
 rm -rf $HOME/.gitconfig; ln -s $DIR/.gitconfig $HOME/.gitconfig
+rm -rf $HOME/.jshintrc; ln -s $DIR/.jshintrc $HOME/.jshintrc
