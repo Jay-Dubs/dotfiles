@@ -1,10 +1,7 @@
 {
-    // Settings
     "passfail"      : false,  // Stop on first error.
     "maxerr"        : 100,    // Maximum error before stopping.
 
-
-    // Predefined globals whom JSHint will ignore.
     "browser"       : true,   // Standard browser globals e.g. `window`, `document`.
 
     "node"          : true,
@@ -20,21 +17,15 @@
     "predef"        : [  // Custom globals.
         "escape", "unescape"  // aren't picked up by node flag above :/
     ],
-
-
-    // Development.
+    
     "debug"         : false,  // Allow debugger statements e.g. browser breakpoints.
     "devel"         : false,  // Allow developments statements e.g. `console.log();`.
-
-
-    // EcmaScript 5.
+    
     "es5"           : true,   // Allow EcmaScript 5 syntax.
     "esnext"        : true,   // Allow ES "next" syntax, specifically 'const' (V8 has this)
     "strict"        : false,  // Require `use strict` pragma  in every file.
     "globalstrict"  : false,  // Allow global "use strict" (also enables 'strict').
 
-
-    // The Good Parts.
     "asi"           : false,  // Tolerate Automatic Semicolon Insertion (no semicolons).
     "laxbreak"      : false,  // Tolerate unsafe line breaks e.g. `return [\n] x` without semicolons.
     "bitwise"       : true,   // Prohibit bitwise operators (&, |, ^, etc.).
@@ -56,8 +47,6 @@
     "supernew"      : false,  // Tolerate `new function () { ... };` and `new Object;`.
     "undef"         : true,   // Require all non-global variables be declared before they are used.
 
-
-    // Personal styling prefrences.
     "lastsemic"     : true,   // Allow missing semicolon for the last statement in a one-line block
     "newcap"        : false,  // Require capitalization of all constructor functions e.g. `new F()`.
     "noempty"       : true,   // Prohipit use of empty blocks.
