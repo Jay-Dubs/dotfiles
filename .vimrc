@@ -12,11 +12,26 @@ set showmatch
 set nocompatible
 
 syntax on
-filetype plugin indent on
 
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_disabled_filetypes = ['html']
+" Vundle configuration
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" Vundle packages
+Bundle 'mileszs/ack.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'ervandew/supertab'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-surround'
+
+filetype plugin indent on
+" End Vundle configuration
+
 let mapleader=","
 let g:NERDTreeDirArrows=0
 
