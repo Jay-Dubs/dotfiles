@@ -29,5 +29,9 @@ rm -rf $HOME/.vim; ln -s $DIR/.vim $HOME/.vim
 rm -rf $HOME/.gitconfig; ln -s $DIR/.gitconfig $HOME/.gitconfig
 rm -rf $HOME/.jshintrc; ln -s $DIR/.jshintrc $HOME/.jshintrc
 
+# Install vundle. (requires git)
+rm -rf ~/.vim/bundle/vundle
+git clone -q https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
 # Run bundler for vim
 vim +BundleInstall +qall
