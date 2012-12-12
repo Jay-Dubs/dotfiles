@@ -1,6 +1,3 @@
-call pathogen#infect()
-call pathogen#helptags()
-
 set mouse=a
 set ts=2
 set backspace=2
@@ -24,5 +21,5 @@ let mapleader=","
 let g:NERDTreeDirArrows=0
 
 set t_Co=256
-colorscheme ir_black
+colorscheme jdub
 set colorcolumn=81
