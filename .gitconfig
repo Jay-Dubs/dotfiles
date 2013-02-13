@@ -14,7 +14,9 @@
   cleanb = !git branch --merged instant | grep -v 'instant$' | xargs git branch -d
   cleanbm = !git branch --merged master | grep -v 'master$' | xargs git branch -d
 [merge]
-  conflictstyle = diff3
+  keepBackup = false
+  prompt = false
+  #tool = p4merge
 [user]
 	name = Jeremy Wright
 	email = jeremywright@goinstant.com
