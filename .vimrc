@@ -29,10 +29,15 @@ Bundle 'ervandew/supertab'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-surround'
 
+syntax on
 filetype plugin indent on
 " End Vundle configuration
 
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_disabled_filetypes = ['html']
 let mapleader=","
+
 let g:NERDTreeDirArrows=0
 
 set t_Co=256
