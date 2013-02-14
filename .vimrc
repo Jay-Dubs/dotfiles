@@ -21,13 +21,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Vundle packages
-Bundle 'mileszs/ack.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'tpope/vim-surround'
+Bundle 'git@github.com:mileszs/ack.vim'
+Bundle 'git@github.com:kien/ctrlp.vim'
+Bundle 'git@github.com:scrooloose/nerdtree'
+Bundle 'git@github.com:scrooloose/syntastic'
+Bundle 'git@github.com:ervandew/supertab'
+Bundle 'git@github.com:Lokaltog/vim-powerline'
+Bundle 'git@github.com:tpope/vim-surround'
 
 syntax on
 filetype plugin indent on
@@ -43,4 +43,3 @@ let g:NERDTreeDirArrows=0
 
 set t_Co=256
 colorscheme jdub
-set colorcolumn=81
