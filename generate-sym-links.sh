@@ -13,6 +13,13 @@
 #
 ################################################################################
 SOURCE="${BASH_SOURCE[0]}"
+SETUP=$1
+
+if [[ -z $SETUP ]]
+then
+  SETUP="dev"
+fi
+
 DIR="$( dirname "$SOURCE" )"
 while [ -h "$SOURCE" ]
 do 
@@ -21,7 +28,7 @@ do
   DIR="$( cd -P "$( dirname "$SOURCE"  )" && pwd )"
 done
 
-DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )/$SETUP"
 
 rm -rf $HOME/.bashrc; ln -s $DIR/.bashrc $HOME/.bashrc
 rm -rf $HOME/.vimrc; ln -s $DIR/.vimrc $HOME/.vimrc
