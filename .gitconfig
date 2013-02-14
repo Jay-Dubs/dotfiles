@@ -1,5 +1,5 @@
 [color]
-	ui = true
+  ui = true
 [alias]
   s = status
   ci = commit
@@ -18,5 +18,5 @@
   prompt = false
   #tool = p4merge
 [user]
-	name = Jeremy Wright
-	email = jeremywright@goinstant.com
+  name = Jeremy Wright
+  email = jeremywright@goinstant.com
