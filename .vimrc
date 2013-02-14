@@ -41,5 +41,9 @@ let mapleader=","
 
 let g:NERDTreeDirArrows=0
 
+if exists('+colorcolumn')
+  set colorcolumn=80
+endif
+
 set t_Co=256
 colorscheme jdub
