@@ -13,10 +13,16 @@
   find = !sh -c 'git ls-tree -r --name-only HEAD | grep --color $1' -
   cleanb = !git branch --merged instant | grep -v 'instant$' | xargs git branch -d
   cleanbm = !git branch --merged master | grep -v 'master$' | xargs git branch -d
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
+[advice]
+	statusHints = false
 [merge]
   keepBackup = false
   prompt = false
-  #tool = p4merge
+  tool = p4merge
 [user]
   name = Jeremy Wright
   email = jeremywright@goinstant.com

@@ -36,6 +36,7 @@ filetype plugin indent on
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes = ['html']
+let g:syntastic_python_flake8_post_args='--ignore=F403'
 let g:vundle_default_git_proto='https'
 let mapleader=","
 
