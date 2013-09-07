@@ -2,6 +2,7 @@
 # Exports
 ################################################################################
 
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:.
 
 ################################################################################
