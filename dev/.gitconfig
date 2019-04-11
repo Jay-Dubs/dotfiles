@@ -12,15 +12,17 @@
   head = !git --no-pager log origin/master..HEAD --abbrev-commit --pretty=oneline
   find = !sh -c 'git ls-tree -r --name-only HEAD | grep --color $1' -
   cleanb = !git branch --merged master | grep -v 'master$' | xargs git branch -d
+  suball = !git submodule update --init --recursive && git submodule foreach --recursive 'rm -rf .git'
+  ignore = update-index --assume-unchanged
+  no-ignore = update-index --no-assume-unchanged
 [branch]
-	autosetupmerge = true
+  autosetupmerge = true
 [push]
-	default = tracking
+  default = tracking
 [advice]
-	statusHints = false
+  statusHints = false
 [merge]
   keepBackup = false
   prompt = false
-[user]
-  name = Jeremy Wright
-  email = jeremywright@goinstant.com
+[commit]
+  gpgsign = true
