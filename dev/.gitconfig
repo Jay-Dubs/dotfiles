@@ -12,7 +12,7 @@
   head = !git --no-pager log origin/master..HEAD --abbrev-commit --pretty=oneline
   find = !sh -c 'git ls-tree -r --name-only HEAD | grep --color $1' -
   cleanb = !git branch --merged master | grep -v 'master$' | xargs git branch -d
-  suball = !git submodule update --init --recursive && git submodule foreach --recursive 'rm -rf .git'
+  suball = !git submodule update --init --recursive
   ignore = update-index --assume-unchanged
   no-ignore = update-index --no-assume-unchanged
 [branch]
@@ -25,4 +25,4 @@
   keepBackup = false
   prompt = false
 [commit]
-  gpgsign = true
+  gpgsign = false
