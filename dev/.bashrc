@@ -3,7 +3,7 @@
 ################################################################################
 
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:.
+export PATH=$PATH:$HOME/local/bin:/usr/local/bin:/usr/local/sbin:.
 
 ################################################################################
 # Helper Functions
@@ -55,6 +55,7 @@ PS1="\[\e[1;34m\]\h:\[\e[m\]\\[$(tput setaf 7)\\]\[\e[1;35m\]\w\[\e[m\] \[\e[1;3
 
 alias vi=vim
 alias clearswap='echo "Removing vim swap files:"; find . | grep \.[^\.].swp$ | xargs rm -vf';
+alias claude="claude --effort max"
 
 alias ls='ls -G'
 
@@ -73,3 +74,7 @@ if [[ -e "$HOME/.scripts/bash.hooks.rc" ]]
 then
   source $HOME/.scripts/bash.hooks.rc
 fi
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

@@ -25,4 +25,11 @@
   keepBackup = false
   prompt = false
 [commit]
-  gpgsign = false
+	gpgsign = true
+[user]
+	signingkey = BD6109F6CB18008B
+	email = jeremy.wright@salesforce.com
+[credential]
+	helper = cache
+[core]
+	autocrlf = input

@@ -31,6 +31,7 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )/$SETUP"
 
 rm -rf $HOME/.bashrc; ln -s $DIR/.bashrc $HOME/.bashrc
+rm -rf $HOME/.zshrc; ln -s $DIR/.zshrc $HOME/.zshrc
 rm -rf $HOME/.vimrc; ln -s $DIR/.vimrc $HOME/.vimrc
 rm -rf $HOME/.vim; ln -s $DIR/.vim $HOME/.vim
 rm -rf $HOME/.gitconfig; ln -s $DIR/.gitconfig $HOME/.gitconfig
